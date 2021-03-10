@@ -10,11 +10,15 @@
     <header>
     </header>
     <main>
+        <!-- <div id="it-is-test">
+            It's a test
+        </div> -->
         <section id="menu">
             <h1>Here go the menu</h1>
-            <div id="tasks">
+            <div id="target">
                 <button>Today 📅️</button>
                 <button>Tomorrow ⏰️</button>
+
                 <button>General 🌍️</button>
             </div>
             <div id="projects">
@@ -29,20 +33,41 @@
             </div>
             <div id="search-bar">
                 <form action="#">
-                    <input type="search" name="search" id="search-input" placeholder="seach for task">
+                    <input type="search" name="search" id="search-input" placeholder="Seach for task">
                     <button id="search-button">Search</button>
                 </form>
             </div>
         </section>
         <section id="view">
             <h1>Here go the tasks <span class="add">add task &plus;</span></h1>
-            <div class="task">
-                <h4 class="title">This is a sample task</h4>
+            <div id="tasks">
+                <!-- <div class="task">
+                    <h4 class="title">This is a sample task</h4>
+                    <div class="task-note">
+                        <p>This is a note to this task that I am supposed to finish before this month of March otherwise I am an idiot. But I know that I am a genius and this will get done as soon as possible.</p>
+                    </div>
+                    <div class="task-description">
+                        <div class="due-date"><h5>Due: 11/12/2021</h5></div>
+                        <div class="details">
+                            <h5 class="project">Project: <span>My project</span></h5>
+                            <div class="labels">
+                                <h5>Labels: <span>This is a label</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div id="add-task">
+                <form action="#" onsubmit="add_task()">
+                    <input type="text" name="task-entry" id="task-entry" placeholder="Add a new task">
+                    <button id="add-task-btn">Add new task</button>
+                </form>
             </div>
         </section>
     </main>
     <footer>
-        <div id="copy-right">&copy; BlackHole company, 2021</div>
+        <div id="copy-right">HackDay App, plan your day like a hack | &copy; BlackHole company, 2021</div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
